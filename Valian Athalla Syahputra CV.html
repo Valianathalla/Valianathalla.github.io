@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Valian Athalla Syahputra - Interactive CV</title>
+
+    <style>
+        /* ===== BASIC PAGE ===== */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef7ff;
+            color: #1f2937;
+        }
+
+        /* ===== HEADER ===== */
+
+        header {
+            background: #123b5d;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        /* ===== NAVIGATION ===== */
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 8px #0002;
+        }
+
+        nav button {
+            background: #d9f0ff;
+            color: #123b5d;
+            border: none;
+            padding: 11px 18px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        nav button:hover {
+            background: #123b5d;
+            color: white;
+        }
+
+        /* ===== CV SECTIONS ===== */
+
+        .section {
+            display: none;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #0002;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #123b5d;
+            margin-top: 0;
+            border-bottom: 3px solid #8bd3ff;
+            padding-bottom: 10px;
+        }
+
+        /* ===== CARDS ===== */
+
+        .card {
+            background: #f5fbff;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #2b8ac6;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #123b5d;
+        }
+
+        .date {
+            color: #2b6f9f;
+            font-weight: bold;
+        }
+
+        /* ===== CONTACT ===== */
+
+        a {
+            color: #1769aa;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            text-align: center;
+            background: #123b5d;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .section {
+                margin: 20px 12px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+
+    <header>
+
+        <h1>VALIAN ATHALLA SYAHPUTRA</h1>
+
+        <p>
+            Informatics Student |
+            Game Development |
+            Interactive Technology
+        </p>
+
+        <p>Jakarta, Indonesia</p>
+
+    </header>
+
+
+    <!-- ===== NAVIGATION ===== -->
+
+    <nav>
+
+        <button onclick="showSection('about')">
+            About Me
+        </button>
+
+        <button onclick="showSection('education')">
+            Education
+        </button>
+
+        <button onclick="showSection('experience')">
+            Experience
+        </button>
+
+        <button onclick="showSection('achievements')">
+            Achievements
+        </button>
+
+        <button onclick="showSection('contact')">
+            Contact
+        </button>
+
+    </nav>
+
+
+    <!-- ===== ABOUT ME ===== -->
+
+    <section id="about" class="section active">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an Informatics student with a strong interest in
+            game development, interactive technology, and organizational
+            activities.
+        </p>
+
+        <p>
+            I have participated in national and international competitions
+            related to coding and creative design. I also have experience
+            in event organization, sponsorship management, and fundraising.
+        </p>
+
+    </section>
+
+
+    <!-- ===== EDUCATION ===== -->
+
+    <section id="education" class="section">
+
+        <h2>Education</h2>
+
+
+        <div class="card">
+
+            <h3>
+                Institut Teknologi Sepuluh Nopember
+            </h3>
+
+            <p class="date">
+                2025 - Present
+            </p>
+
+            <p>
+                Department of Informatics
+            </p>
+
+            <p>
+                Surabaya, Indonesia
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                SMAN 67 Jakarta Timur
+            </h3>
+
+            <p class="date">
+                2022 - 2025
+            </p>
+
+            <p>
+                Senior High School
+            </p>
+
+            <p>
+                East Jakarta, Indonesia
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== EXPERIENCE ===== -->
+
+    <section id="experience" class="section">
+
+        <h2>Experience</h2>
+
+
+        <div class="card">
+
+            <h3>
+                SCHEMATICS ITS 2026 - Fundraising
+            </h3>
+
+            <p class="date">
+                2026 - Present
+            </p>
+
+            <p>
+                Responsible for designing and executing fundraising
+                activities to support the funding needs of the event series.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                IDEAS 2026 (ILITS Forda Bekasi) - Sponsorship
+            </h3>
+
+            <p class="date">
+                2026
+            </p>
+
+            <p>
+                Worked on sponsor searching, negotiation, and partnership
+                management. Successfully obtained direct sponsorship from
+                PT Sucofindo (Persero).
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Crevolution 10 - Sponsorship Division
+            </h3>
+
+            <p class="date">
+                March - September 2024
+            </p>
+
+            <p>
+                Supported event preparation and successfully secured
+                partnerships with 10 sponsors for the school concert.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Classmeet - Vice Event Coordinator
+            </h3>
+
+            <p class="date">
+                December 2024
+            </p>
+
+            <p>
+                Prepared the event proposal and supervised the event
+                to ensure that activities ran smoothly.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Namfest - Equipment Division
+            </h3>
+
+            <p class="date">
+                June 2023
+            </p>
+
+            <p>
+                Prepared and managed equipment needs for the school
+                art festival.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+
+    <section id="achievements" class="section">
+
+        <h2>Achievements</h2>
+
+
+        <div class="card">
+
+            <h3>
+                Festival Technopreneur - Clevio Coder Camp
+            </h3>
+
+            <p class="date">
+                2021
+            </p>
+
+            <p>
+                Winner - Most Favorite Game
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                World Scratch Game Challenge
+            </h3>
+
+            <p class="date">
+                2022
+            </p>
+
+            <p>
+                Outstanding Script Award and Top 6 of 126 participants
+                from 47 countries.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Spring Scratch Challenge
+            </h3>
+
+            <p class="date">
+                2021
+            </p>
+
+            <p>
+                Outstanding Animation Award and Top 9 of 91 participants
+                from 35 countries.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Olimpiade TIK - National Informatics
+            </h3>
+
+            <p class="date">
+                2023 & 2024
+            </p>
+
+            <p>
+                Finalist
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== CONTACT ===== -->
+
+    <section id="contact" class="section">
+
+        <h2>Contact</h2>
+
+
+        <p>
+            📍 Jakarta, Indonesia
+        </p>
+
+
+        <p>
+            ✉
+            <a href="mailto:valiant.athalla@gmail.com">
+                valiant.athalla@gmail.com
+            </a>
+        </p>
+
+
+        <p>
+            🔗
+            <a
+                href="https://linkedin.com/in/valian-athalla"
+                target="_blank"
+            >
+                linkedin.com/in/valian-athalla
+            </a>
+        </p>
+
+
+        <p>
+            ☎ +62 813 8506 8672
+        </p>
+
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+
+        © 2026 Valian Athalla Syahputra
+
+    </footer>
+
+
+    <!-- ===== JAVASCRIPT ===== -->
+
+    <script>
+
+        function showSection(sectionId) {
+
+            // Get all sections
+            let sections =
+                document.getElementsByClassName("section");
+
+
+            // Hide all sections
+            for (let i = 0; i < sections.length; i++) {
+
+                sections[i].classList.remove("active");
+
+            }
+
+
+            // Show the selected section
+            document
+                .getElementById(sectionId)
+                .classList.add("active");
+
+        }
+
+    </script>
+
+</body>
+</html>
